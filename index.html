@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Geometric-Figures</title>
+</head>
+<body>
+    
+
+ <div class="h1">
+    <h1>GEOMETRIC FIGURES</h1>
+ </div>
+    <div class="form">
+        <div class="square"></div>
+        <div class="circle"></div>
+        <div class="triangle"></div>
+    <div class="calculadora">
+        <section>
+            <div class="h2">
+            <h2>Calculate the area and perimeter of a square</h2>
+            </div>
+            <form>
+                <div>
+                    <label for="squareInput">
+                        How long is each side?
+                    </label>
+                </div>
+        
+                    <input type="number" id="squareInput">
+                    <p id="squarePerimeter"></p>
+                    <p id="squareArea"></p>
+                <div class="form2">
+                    <button type="button" onclick="squarePerimeterCalculate()" class="btn"> Calculate perimeter</button>
+                    <button type="button" onclick="squareAreaCalculate()" class="btn">Calculate area</button>
+                    <button onclick="resetAll()" class="btn">Reset</button>
+                </div>
+            </form>
+        </section>
+        
+    </div>
+
+
+
+    <div class="calculadora">
+        <section>
+            <div class="h2">
+        <h2>Calculate the area and perimeter of a circle</h2>
+        </div>
+            <form>
+                <div>
+                    <label for="circleInput">
+                        How long is the radius?
+                    </label>
+                </div>
+        
+                    <input type="number" id="circleInput">
+                    <p id="circlePerimeter"></p>
+                    <p id="circleArea"></p>
+                <div class="form2">
+                    <button type="button" onclick="circlePerimeterCalculate()" class="btn"> Calculate perimeter</button>
+                    <button type="button" onclick="circleAreaCalculate()" class="btn">Calculate area</button>
+                    <button onclick="resetAll()" class="btn">Reset</button>
+                </div>
+            
+
+            </form>
+        </section>
+        
+    </div>
+
+
+    <div class="calculadora">
+        <section>
+            <div class="h2">
+        <h2>Calculate the area and perimeter of a triangle</h2>
+        </div>
+            <form>
+                <div class="form3">
+                    <div>
+                         <label for="side1Input">
+                         How long is the first side?
+                         </label>
+                        
+                        <input type="number" id="side1Input">
+                       
+                    </div>
+                   
+                    <div>
+                        <label for="side2Input">
+                         How long is the second side?
+                        </label>
+                        
+                        <input type="number" id="side2Input">
+                    </div>
+                    
+                    <div>
+                        <label for="baseInput">
+                        How long is the base?
+                        </label>
+                    
+                        <input type="number" id="baseInput">
+                    </div>
+                    
+                    <div>
+                        <label for="heightInput"></label>
+                        How long is the height?
+                        <input type="number" id="heightInput">
+                    </div>
+                </div>
+
+                        <p id="trianglePerimeter"></p>
+                        <p id="triangleArea"></p>
+                   
+                <div class="form2">
+                    <input type="button" onclick="trianglePerimeterCalculate()" class="btn" value="Calculate perimeter">
+                    <input type="button" onclick="triangleAreaCalculate()" class="btn" value="Calculate area">
+                    <button onclick="resetAll()" class="btn">Reset</button>
+                </div>
+                
+            </form>
+        </section>
+    </div>
+</div>
+     
+    
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
